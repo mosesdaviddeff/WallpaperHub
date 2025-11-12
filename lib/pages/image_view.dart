@@ -120,14 +120,28 @@ class _ImageViewState extends State<ImageView> {
               MaterialPageRoute(builder: (context) => Home())
             );
           },
-          child: Text(
-                  "Cancel",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Poppins',
-                    fontSize: 25,
-                  ),
-                ),
+          child: Container(
+            height: 50,
+            width: 50,
+            decoration: BoxDecoration(
+            color: Colors.grey.withOpacity(0.3),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Icon(
+              Icons.arrow_back,
+              color: Colors.white,
+              size: 30, 
+            ),
+          ),
+          
+          // child: Text(
+          //         "Cancel",
+          //         style: TextStyle(
+          //           color: Colors.white,
+          //           fontFamily: 'Poppins',
+          //           fontSize: 25,
+          //         ),
+          //       ),
         ),
             ),
         ],
